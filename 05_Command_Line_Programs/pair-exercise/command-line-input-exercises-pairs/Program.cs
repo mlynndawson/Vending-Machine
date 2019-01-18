@@ -14,7 +14,20 @@ namespace command_line_input_exercises_pairs
         */
         static void Main(string[] args)
         {
-            Console.WriteLine("Hi!");
+            // Print out message
+            // Get bill from user
+            // Parse string to decimal
+            // Get amount tendered
+            // Parse into decimal
+            // Find difference save to variable change
+            // Print change
+            Console.WriteLine("Let's figure out your change!");
+            Console.Write("Enter the amount of the bill:");
+            decimal bill = decimal.Parse(Console.ReadLine());
+            Console.Write("Enter amount paid:");
+            decimal amountPaid = decimal.Parse(Console.ReadLine());
+            decimal difference = amountPaid - bill;
+            Console.WriteLine($"Your change is {difference:C}");
         }
     }
 }
