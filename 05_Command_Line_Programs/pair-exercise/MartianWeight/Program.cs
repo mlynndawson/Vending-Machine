@@ -20,12 +20,31 @@ namespace MartianWeight
     98 lbs.on Earth, is 37 lbs.on Mars.
     235 lbs.on Earth, is 88 lbs.on Mars.
     185 lbs.on Earth, is 69 lbs.on Mars. 
+
+
+        - Message your weight on mars
+        - message to enter data
+        - prompt for input string of weights
+        - split the strings into the array
+            - parse the strings
+            - equation
+            -print message
     */
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!");
+            Console.WriteLine("Your weight on Mars!");
+            Console.Write("Enter all users' weight values on earth in lbs (separate spaces)");
+            string weights = Console.ReadLine();
+            string[] weightsArray = weights.Split(' ');
+            for (int i = 0; i < weightsArray.Length; i++) 
+            { 
+                decimal earthWeight = decimal.Parse(weightsArray[i]);
+                decimal martianWeight = earthWeight * (decimal)0.378;
+                Console.WriteLine($"{earthWeight}lbs on Earth, is {martianWeight}lbs on Mars.");
+            }
+            
         }
     }
 }
