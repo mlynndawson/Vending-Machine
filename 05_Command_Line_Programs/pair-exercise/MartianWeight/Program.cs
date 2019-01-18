@@ -1,4 +1,8 @@
-﻿using System;
+﻿//git push origin master 
+
+//git pull origin master NOT upstream
+
+using System;
 
 namespace MartianWeight
 {
@@ -21,7 +25,7 @@ namespace MartianWeight
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello!");
         }
     }
 }
