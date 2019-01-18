@@ -14,7 +14,7 @@ namespace command_line_input_exercises_pairs
         */
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hi!");
         }
     }
 }
